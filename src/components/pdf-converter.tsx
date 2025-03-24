@@ -77,7 +77,12 @@ export function PdfConverter() {
 						<Textarea
 							value={extractedText}
 							readOnly
-							className="min-h-[300px] font-mono text-sm"
+							className="min-h-[300px] font-mono text-sm whitespace-pre-wrap p-4"
+							style={{
+								lineHeight: "1.6",
+								letterSpacing: "0.01em",
+								tabSize: 4,
+							}}
 						/>
 					</div>
 				)}
